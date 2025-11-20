@@ -1,0 +1,9 @@
+<Project >
+
+	<PropertyGroup>
+		<TargetFrameworks>$(TargetFrameworks);net48-Client;</TargetFrameworks>
+	</PropertyGroup>
+
+	
+	
+</Project>

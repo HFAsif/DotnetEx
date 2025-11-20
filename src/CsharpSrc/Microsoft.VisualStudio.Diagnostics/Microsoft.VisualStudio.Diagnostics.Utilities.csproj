@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	
+	<Import Project="$(SolutionDir)_configs/DotNetFiles/DotnetAllClient.props" />
+	
+	<PropertyGroup>
+		<AssemblyName>Microsoft.VisualStudio.Diagnostics.Utilities</AssemblyName>
+		<GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<NoWarn>$(NoWarn);SYSLIB0051;CS0649;</NoWarn>
+	</PropertyGroup>
+
+	<!--<PackageReference Include="System.Diagnostics.EventLog" Version="9.0.9" />-->
+
+	<Choose>
+		<When Condition=" '$(TargetFramework)' == 'net20-Client' OR '$(TargetFramework)' == 'net20'">
+
+			<ItemGroup>
+				<Reference Include="System.Core">
+					<HintPath>C:\Program Files\Reference Assemblies\Microsoft\Framework\v3.5\System.Core.dll</HintPath>
+				</Reference>
+			</ItemGroup>
+
+		</When>
+
+		<When Condition="$([MSBuild]::GetTargetFrameworkIdentifier('$(TargetFramework)')) == '.NETFramework'">
+
+			<ItemGroup>
+				<Reference Include="System.Core" />
+			</ItemGroup>
+		</When>
+		<Otherwise>
+			<PropertyGroup>
+				<NoWarn>$(NoWarn);CA1416</NoWarn>
+			</PropertyGroup>
+			<ItemGroup>
+				<PackageReference Include="System.Diagnostics.EventLog" Version="9.0.9" />
+			</ItemGroup>
+		</Otherwise>
+	</Choose>
+
+
+
+</Project>

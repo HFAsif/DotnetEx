@@ -1,0 +1,13 @@
+<Project>
+	
+	<Import Project="$(SolutionDir)_configs/DotnetEx.props" />
+	
+	<PropertyGroup>
+		<LangVersion>14.0</LangVersion>
+		<DefineConstants Condition="'$(Platform)' == 'x64'">$(DefineConstants);_x64bit_</DefineConstants>
+		<DefineConstants Condition="'$(Platform)' == 'x86'">$(DefineConstants);_x86bit_</DefineConstants>
+		<DefineConstants Condition="'$(Platform)' == 'AnyCPU'">$(DefineConstants);_AnyCPU_</DefineConstants>
+		<DefineConstants>$(DefineConstants);JMICRON_USB_RAID_SUPPORT</DefineConstants>
+	</PropertyGroup>
+	
+</Project>

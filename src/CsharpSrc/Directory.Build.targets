@@ -1,0 +1,9 @@
+<Project>
+
+	<Import Project="$(SolutionDir)_configs/asmSigneture.props" />
+	<Import Project="$(SolutionDir)_configs/AssemblyInfoLined.props" />
+	
+	<Import Project="..\..\Directory.Build.targets" />
+	
+	
+</Project>

@@ -1,0 +1,9 @@
+<Project >
+
+	<PropertyGroup>
+		<TargetFrameworks>$(TargetFrameworks);net40;</TargetFrameworks>
+	</PropertyGroup>
+
+	<Import Condition=" '$(TargetFramework)' == 'net40' " Project="$(SolutionDir)_configs/DotnetFrameWorkFourExtension.props" />
+	
+</Project>

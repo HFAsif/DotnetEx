@@ -1,0 +1,22 @@
+<Project >
+
+	<Choose>
+		<When Condition=" '$(TargetFramework)' == 'net40-Client' OR '$(TargetFramework)' == 'net40' OR '$(TargetFramework)' == 'net45-Client' OR '$(TargetFramework)' == 'net45'">
+			
+			<ItemGroup>
+				<Reference Include="System.Runtime.CompilerServices.Unsafe">
+					<HintPath>C:\Program Files\Microsoft Visual Studio\18\Enterprise\Common7\IDE\PublicAssemblies\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+				</Reference>
+			</ItemGroup>
+			
+			
+		</When>
+
+		<Otherwise>
+			<ItemGroup>
+				<PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="6.1.2" />
+			</ItemGroup>
+		</Otherwise>
+	</Choose>
+	
+</Project>

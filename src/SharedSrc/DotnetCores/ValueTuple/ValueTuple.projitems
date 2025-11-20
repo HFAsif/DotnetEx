@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>50142dde-d139-4246-8525-a3ced513eebc</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ValueTuple</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)System.Numerics.Hashing\HashHelpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\TupleElementNamesAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\ITupleInternal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\SR.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\TupleExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\ValueTuple.cs" />
+  </ItemGroup>
+</Project>

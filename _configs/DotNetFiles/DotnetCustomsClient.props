@@ -1,0 +1,7 @@
+<Project >
+
+	<Import Project="$(SolutionDir)_configs/DotNetFiles/NetCores.props" />
+	<Import Project="$(SolutionDir)_configs/DotNetFiles/DotnetFrameWorkFourClient.props" />
+	<Import Project="$(SolutionDir)_configs/DotNetFiles/DotnetFrameWorkFourEightClient.props" />
+	
+</Project>

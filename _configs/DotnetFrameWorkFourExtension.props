@@ -1,0 +1,31 @@
+<Project >
+
+	<PropertyGroup>
+		<NoStdLib>true</NoStdLib>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="mscorlib">
+			<HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll</HintPath>
+		</Reference>
+
+		<Reference Include="System">
+			<HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
+		</Reference>
+		
+		<!--<Reference Include="System.Runtime.CompilerServices.Unsafe">
+			<HintPath>C:\Program Files\Microsoft Visual Studio\18\Enterprise\Common7\IDE\PublicAssemblies\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+		</Reference>-->
+
+		<!--<Reference Include="System.Management" />-->
+
+		<!--<Reference Include="System.Management">
+			<HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Management.dll</HintPath>
+		</Reference>-->
+
+		<!--<Reference Include="System.Management">
+			<HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Management.dll</HintPath>
+		</Reference>-->
+	</ItemGroup>
+	
+</Project>

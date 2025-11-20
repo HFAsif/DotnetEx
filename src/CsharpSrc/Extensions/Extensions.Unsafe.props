@@ -1,0 +1,28 @@
+<Project >
+
+	
+	<Import Project="..\..\SharedSrc\HelperClass.Unsafe\HelperClass.Unsafe.projitems" Label="Shared" />
+	
+	<ItemGroup>
+		<ProjectReference Include="..\Microsoft.VisualStudio.Diagnostics\Microsoft.VisualStudio.Diagnostics.Utilities.csproj" />
+	</ItemGroup>
+
+	<Import Condition=" '$(TargetFramework)' == 'net20-Client' OR '$(TargetFramework)' == 'net35-Client' " Project="..\..\SharedSrc\DotnetCores\DotNetTwoAndThreeFiveHelpers\DotNetTwoAndThreeFiveHelpers.projitems" Label="Shared" />
+	<!--<Import Condition=" '$(TargetFramework)' == 'net20-Client' OR '$(TargetFramework)' == 'net35-Client' " Project="..\..\Library\TaskDotNetTwoAndThreeFive\TaskDotNetTwoAndThreeFive.projitems" Label="Shared" />-->
+
+	<Import Condition="'$(TargetFramework)' == 'net35-Client' " Project="..\..\SharedSrc\DotnetCores\TaskDotnetThreeFive\TaskDotnetThreeFive.projitems" Label="Shared" />
+	<Import Condition="'$(TargetFramework)' == 'net35-Client' " Project="..\..\SharedSrc\DotnetCores\TaskDotnetThreeFivePartial\TaskDotnetThreeFivePartial.projitems" Label="Shared" />
+
+	<Import Condition="'$(TargetFramework)' == 'net20-Client' " Project="..\..\SharedSrc\DotnetCores\TaskDotnetTwo\TaskDotnetTwo.projitems" Label="Shared" />
+	<Import Condition="'$(TargetFramework)' == 'net20-Client' " Project="..\..\SharedSrc\DotnetCores\TaskDotnetTwoPartial\TaskDotnetTwoPartial.projitems" Label="Shared" />
+
+	<Import Condition=" '$(TargetFramework)' == 'net40-Client' OR '$(TargetFramework)' == 'net40' " Project="..\..\SharedSrc\DotnetCores\DotNetFourHelpers\DotNetFourHelpers.projitems" Label="Shared" />
+	
+	<Import Condition="!$([MSBuild]::VersionGreaterThanOrEquals('$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)'))','6.0')) AND !$([MSBuild]::VersionGreaterThanOrEquals('$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)'))','4.6.1'))" Project="..\..\SharedSrc\DotnetCores\ValueTuple\ValueTuple.projitems" Label="Shared" />
+	<Import Condition="!$([MSBuild]::VersionGreaterThanOrEquals('$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)'))','6.0'))" Project="..\..\SharedSrc\DotnetCores\FrameWorkEngine\FrameWorkEngine.projitems" Label="Shared" />
+
+	<!--<Import Project="..\..\SharedSrc\ComplexProgressbar\ComplexProgressbar.projitems" Label="Shared" />-->
+	<!--<Import Project="..\..\SharedSrc\DownloaderShared\BZDownloader\BZDownloader.projitems" Label="Shared" />
+	<Import Project="..\..\SharedSrc\ComplexProgressbar\ComplexProgressbar.projitems" Label="Shared" />-->
+	
+</Project>

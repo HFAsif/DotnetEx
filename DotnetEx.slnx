@@ -1,0 +1,73 @@
+<Solution>
+  <Folder Name="/DotnetExLib/">
+    <File Path="src/CsharpSrc/Directory.Build.props" />
+    <File Path="src/CsharpSrc/Directory.Build.targets" />
+  </Folder>
+  <Folder Name="/DotnetExLib/ConfigFiles/">
+    <File Path="_configs/asmSigneture.props" />
+    <File Path="_configs/AssemblyInfoLined.props" />
+    <File Path="_configs/DotnetEx.props" />
+    <File Path="_configs/DotnetFrameWorkFourExtension.props" />
+    <File Path="_configs/ExeConfigs.props" />
+    <File Path="_configs/Extensions.props" />
+    <File Path="_configs/System_Runtime_Unsafe.props" />
+  </Folder>
+  <Folder Name="/DotnetExLib/ConfigFiles/DotNetFiles/">
+    <File Path="_configs/DotNetFiles/DotnetAll.props" />
+    <File Path="_configs/DotNetFiles/DotnetAllClient.props" />
+    <File Path="_configs/DotNetFiles/DotnetAllClientWindows.props" />
+    <File Path="_configs/DotNetFiles/DotnetAllWindows.props" />
+    <File Path="_configs/DotNetFiles/DotnetCustoms.props" />
+    <File Path="_configs/DotNetFiles/DotnetCustomsClient.props" />
+    <File Path="_configs/DotNetFiles/DotnetCustomsClientWindows.props" />
+    <File Path="_configs/DotNetFiles/DotnetCustomsClientWithoutFour.props" />
+    <File Path="_configs/DotNetFiles/DotnetCustomsClientWithoutFourWindows.props" />
+    <File Path="_configs/DotNetFiles/DotnetCustomsWindows.props" />
+    <File Path="_configs/DotNetFiles/DotnetCustomsWithoutFour.props" />
+    <File Path="_configs/DotNetFiles/DotnetCustomsWithoutFourWindows.props" />
+    <File Path="_configs/DotNetFiles/DotnetFrameWorkAndCoreSingle.props" />
+    <File Path="_configs/DotNetFiles/DotnetFrameWorkFour.props" />
+    <File Path="_configs/DotNetFiles/DotnetFrameWorkFourClient.props" />
+    <File Path="_configs/DotNetFiles/DotnetFrameWorkFourEight.props" />
+    <File Path="_configs/DotNetFiles/DotnetFrameWorkFourEightClient.props" />
+    <File Path="_configs/DotNetFiles/DotnetFrameWorkFourFive.props" />
+    <File Path="_configs/DotNetFiles/DotnetFrameWorkFourFiveClient.props" />
+    <File Path="_configs/DotNetFiles/DotnetFrameWorksEx.props" />
+    <File Path="_configs/DotNetFiles/DotnetFrameWorksExClients.props" />
+    <File Path="_configs/DotNetFiles/NetCores.props" />
+    <File Path="_configs/DotNetFiles/NetCoresWindows.props" />
+  </Folder>
+  <Folder Name="/DotnetExLib/CsharpSrc/">
+    <Project Path="src/CsharpSrc/Cleanup/Cleanup.csproj" />
+    <Project Path="src/CsharpSrc/Extensions/Extensions.csproj" />
+    <Project Path="src/CsharpSrc/JunkCodes/JunkCodes.csproj" />
+    <Project Path="src/CsharpSrc/Microsoft.VisualStudio.Diagnostics/Microsoft.VisualStudio.Diagnostics.Utilities.csproj" />
+    <Project Path="src/CsharpSrc/UTask.Core/UTask.Core.csproj" />
+  </Folder>
+  <Folder Name="/DotnetExLib/SharedSrc/">
+    <Project Path="src/SharedSrc/HelperClass.All/HelperClass.All.shproj" Id="987a948a-c6f4-4291-a590-9199c7105312" />
+    <Project Path="src/SharedSrc/HelperClass.Unsafe/HelperClass.Unsafe.shproj" Id="deeb86a5-d9e3-4790-b3df-7cddd8d4c99a" />
+    <Project Path="src/SharedSrc/HelperClass/HelperClass.shproj" Id="90cf9b0a-0dc5-42a1-916a-784b362d6c34" />
+  </Folder>
+  <Folder Name="/DotnetExLib/SharedSrc/NetCoreView/">
+    <Project Path="src/SharedSrc/DotnetCores/DotNetFourHelpers/DotNetFourHelpers.shproj" Id="0a982373-a07a-414c-98da-a47217e1a1d7" />
+    <Project Path="src/SharedSrc/DotnetCores/DotNetTwoAndThreeFiveHelpers/DotNetTwoAndThreeFiveHelpers.shproj" Id="7eb1c40e-8d37-44c5-890b-3c8cfaf8c70a" />
+    <Project Path="src/SharedSrc/DotnetCores/FrameWorkEngine/FrameWorkEngine.shproj" Id="47b45904-3960-4e16-8348-2dfbe12d2ab2" />
+    <Project Path="src/SharedSrc/DotnetCores/TaskDotnetThreeFive/TaskDotnetThreeFive.shproj" Id="f3819f6f-fe77-48d2-8034-e911463a0d83" />
+    <Project Path="src/SharedSrc/DotnetCores/TaskDotnetThreeFivePartial/TaskDotnetThreeFivePartial.shproj" Id="648a5a22-16d6-4c3f-9329-288c93b7fa47" />
+    <Project Path="src/SharedSrc/DotnetCores/TaskDotnetTwo/TaskDotnetTwo.shproj" Id="c73f82d9-7bf8-439e-90c0-631303b65792" />
+    <Project Path="src/SharedSrc/DotnetCores/TaskDotnetTwoPartial/TaskDotnetTwoPartial.shproj" Id="34f825dd-22f2-47e0-af72-ebc98e56b434" />
+    <Project Path="src/SharedSrc/DotnetCores/ValueTuple/ValueTuple.shproj" Id="50142dde-d139-4246-8525-a3ced513eebc" />
+  </Folder>
+  <Folder Name="/LibEx/" />
+  <Folder Name="/LibEx/ConfigFiles/" />
+  <Folder Name="/LibEx/CsharpSrc/" />
+  <Folder Name="/LibEx/SharedSrc/" />
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="app.manifest" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Build.targets" />
+  </Folder>
+  <Project Path="src/CsharpSrc/DotnetEx/DotnetEx.csproj" />
+</Solution>

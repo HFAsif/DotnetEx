@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>34f825dd-22f2-47e0-af72-ebc98e56b434</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TaskDotnetTwoPartial</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)LinqBridge\DelegatingComparer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LinqBridge\Key.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LinqBridge\KeyComparer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LinqBridge\OrderedEnumerable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Linq\Enumerable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Linq\IGrouping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Linq\ILookup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Linq\IOrderedEnumerable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Linq\Lookup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\CallerMemberNameAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\FriendAccessAllowedAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading.Tasks\ModedTask.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading.Tasks\Shared.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading.Tasks\TaskExceptionHolder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading.Tasks\TaskExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading.Tasks\TaskFactoryPartial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading.Tasks\TaskScheduler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading\IThreadPoolWorkItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading\Monitor2.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading\SemaphoreSlim.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading\SemaphoreSlimEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\Environment2.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,7 @@
+<Project>
+	
+	<PropertyGroup>
+		<TargetFrameworks>$(TargetFrameworks);net20-Client;net35-Client;</TargetFrameworks>
+	</PropertyGroup>
+  
+</Project>

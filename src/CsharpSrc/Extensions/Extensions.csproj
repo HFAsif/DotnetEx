@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<!--<Import Condition="'$(AllowUnsafeBlocks)' == 'false'" Project="$(SolutionDir)_configs/DotNetFiles/DotnetAllClient.props" />
+	<Import Condition="'$(AllowUnsafeBlocks)' == 'true'" Project="$(SolutionDir)_configs/DotNetFiles/DotnetAllClientWindows.props" />-->
+
+	<Import Project="$(SolutionDir)_configs/DotNetFiles/DotnetAllClient.props" />
+	
+	<Import Project="$(SolutionDir)_configs/Extensions.props" />
+	<!--<Import Condition="'$(AllowUnsafeBlocks)' == 'false'" Project="..\..\SharedSrc\HelperClass\HelperClass.projitems" Label="Shared" />-->
+	<Import Condition="'$(AllowUnsafeBlocks)' == 'false'" Project="..\..\SharedSrc\HelperClass\HelperClass.projitems" Label="Shared" />
+	<Import Project="..\..\SharedSrc\HelperClass.All\HelperClass.All.projitems" Label="Shared" />
+	
+
+	
+
+	
+	<Import Condition="'$(AllowUnsafeBlocks)' == 'true'" Project="Extensions.Unsafe.props" />
+	
+</Project>

@@ -1,0 +1,34 @@
+<Project >
+	
+	<!--Condition="$(SolutionName.Contains('jit'))"-->
+	<!--<When Condition="'$(SolutionName)' != '' And $([System.String]::new('$(SolutionName)').Contains('JIT'))" >-->
+	
+	<Choose>
+
+		<When Condition="$(SolutionName.Contains('JIT')) Or $(SolutionName.Contains('Jit')) Or $(SolutionName.Contains('jit')) ">
+
+			<PropertyGroup>
+				<Platforms>AnyCPU;x86;x64</Platforms>
+			</PropertyGroup>
+			
+		</When>
+
+	</Choose>
+
+	<Choose>
+		<When Condition=" $(SolutionName.Contains('JIT')) Or $(SolutionName.Contains('Jit')) Or $(SolutionName.Contains('jit')) Or $(SolutionName) == 'DownloaderEx' Or $(SolutionName) == 'DotnetEx' Or $(MSBuildProjectName) == 'Extensions' ">
+			<PropertyGroup>
+				<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+			</PropertyGroup>
+		</When>
+	</Choose>
+
+	<Choose>
+		<When Condition="$(MSBuildProjectName) == 'DownloaderEx.Demo' Or $(MSBuildProjectName) == 'DiskInfoDotnet' ">
+			<PropertyGroup>
+				<NoWarn>$(NoWarn);CS1685;</NoWarn>
+			</PropertyGroup>
+		</When>
+	</Choose>
+	
+</Project>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>648a5a22-16d6-4c3f-9329-288c93b7fa47</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>TaskDotnetThreeFivePartial</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AsyncCompatLibExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\AsyncMethodBuilderCore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\AsyncMethodTaskCache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\AsyncStateMachineAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\AsyncTaskMethodBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\AsyncVoidMethodBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\CallerFilePathAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\CallerLineNumberAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\CallerMemberNameAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\ConfiguredTaskAwaitable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\IAsyncMethodBuilder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\IAsyncStateMachine.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\ICriticalNotifyCompletion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\INotifyCompletion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\IteratorStateMachineAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\StateMachineAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\TaskAwaiter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\VoidTaskResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime.CompilerServices\YieldAwaitable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Runtime\TargetedPatchingOptOutAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)SerializableAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.ExceptionServices\ExceptionDispatchInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Threading.Tasks\TaskEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Threading\ExecutionContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Threading\ExecutionContextEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\CallerMemberNameAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\FriendAccessAllowedAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading.Tasks\ModedTask.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading.Tasks\TaskFactoryPartial.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Threading\SemaphoreSlimEx.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>7eb1c40e-8d37-44c5-890b-3c8cfaf8c70a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>DotNetTwoAndThreeFiveHelpers</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Cores\Console20Views.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cores\MethodCodeType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cores\MethodImplAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cores\MethodImplOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cores\SecurityProtocolTypeN.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cores\TypeDependencyAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cores\WeakReference.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Collections.Generic\IProgress.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Net\ModedWebRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System\SR.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\IEnumerable.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\IEnumerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\IReadOnlyCollection.cs" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+<Project >
+
+	<ItemGroup>
+		<Compile Include="$(SolutionDir)src\LinkedSrc\Properties\**\*.*">
+			<Link>Properties\%(FileName)%(Extension)</Link>
+			<!--<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>-->
+		</Compile>
+	</ItemGroup>
+	
+</Project>

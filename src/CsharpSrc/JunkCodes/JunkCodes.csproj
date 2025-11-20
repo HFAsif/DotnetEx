@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="$(SolutionDir)_configs/DotNetFiles/DotnetFrameWorkAndCoreSingle.props" />
+	
+  <PropertyGroup>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="ProgramEx.cs" />
+    <Compile Remove="TheClassToUse.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TheClassToUse.cs" />
+  </ItemGroup>
+
+</Project>

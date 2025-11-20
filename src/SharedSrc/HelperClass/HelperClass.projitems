@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>90cf9b0a-0dc5-42a1-916a-784b362d6c34</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>HelperClass</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)System.ComponentModel\IsExternalInit.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\CompilerFeatureRequiredAttribute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)System.Runtime.CompilerServices\RequiredMemberAttribute.cs" />
+  </ItemGroup>
+</Project>
